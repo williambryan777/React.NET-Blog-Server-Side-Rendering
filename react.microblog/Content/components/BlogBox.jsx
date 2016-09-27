@@ -35,7 +35,7 @@ var BlogBox = React.createClass({
         return (
             <div className="weibo_wrap weibo_detail_wrap">
                 <ul className='weibo_detail_list'>
-
+                    {originalBlogs}
                 </ul>
             </div>
         )

@@ -2,9 +2,9 @@
 var React = require('react')
 var Attention = React.createClass({
     propTypes: {
-        isAttention: React.propTypes.bool.isRequired,//是否关注
-        isOwnerBlog: React.propTypes.bool.isRequired,//是否当前用户的微博
-        userId: React.propTypes.number.isRequired//用户ID
+        isAttention: React.PropTypes.bool.isRequired,//是否关注
+        isOwnerBlog: React.PropTypes.bool.isRequired,//是否当前用户的微博
+        userId: React.PropTypes.number.isRequired//用户ID
     },
     getInitialState(){
         return {

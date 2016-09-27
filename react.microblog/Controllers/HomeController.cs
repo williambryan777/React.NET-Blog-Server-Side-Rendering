@@ -12,7 +12,7 @@ namespace react.microblog.Controllers
         private Pager<VMicroBlogItem> _vMicroBlogItems;
         public HomeController()
         {
-            var path = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "bin");
+            var path = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"bin\blogs.json");
             string contents = System.IO.File.ReadAllText(path);
             _vMicroBlogItems = JsonConvert.DeserializeObject<Pager<VMicroBlogItem>>(contents);
         }

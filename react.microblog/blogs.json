@@ -1,6 +1,5 @@
 {
-    "list": {
-        "PageSize": 15,
+ "PageSize": 15,
         "PageIndex": 1,
         "RowCount": 588,
         "Items": [
@@ -655,5 +654,4 @@
             }
         ],
         "TotalPages": 40
-    }
 }

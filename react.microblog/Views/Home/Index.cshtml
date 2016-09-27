@@ -13,7 +13,7 @@
     </p>
 
     <!-- Render the component server-side, passing initial props -->
-    @Html.React("Components.CommentsBox", new { initBlogs = Model.Items })
+    @Html.React("Components.BlogBox", new { initBlogs = Model.Items })
 
     <!-- Load all required scripts (React + the site's scripts) -->
     <script src="https://fb.me/react-15.0.1.js"></script>
