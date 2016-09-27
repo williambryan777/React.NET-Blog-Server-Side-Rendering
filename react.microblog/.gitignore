@@ -1,0 +1,5 @@
+packages
+build
+bin
+node_module
+obj

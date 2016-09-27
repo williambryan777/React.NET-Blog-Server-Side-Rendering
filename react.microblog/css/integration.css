@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/**这是一个整合的样式表，把旧版本的整合过来 **/
+
+/* -- 跟随设置 -- */
+.follow-setup-box{width:800px;height:540px;border-top:2px solid #ff6200;border-bottom:1px solid #e1e2e6;border-left:1px solid #e1e2e6;border-right:1px solid #e1e2e6; background:#fff;}
+.follow-setup-box-top{ float:left;width:800px;height:50px;line-height:50px; background:#f5f6fa;}
+.follow-setup-box-top h1{float:left;font-size:15px;margin-left:20px;}
+.follow-setup{float:left;padding:20px;width:760px;}
+.follow-setup-cn,.follow-setup-cn dl{float:left;width:760px;}
+.follow-setup-cn dt{float:left;width:20px;height:20px;font-size: 12px; background:#ff6200;border-radius:2px; text-align:center; line-height:20px;color:#fff;}
+.follow-setup-cn dd{float:left; }
+.follow-setup-cn-wide{float:left;width:370px;margin-top:20px; line-height:20px;}
+.follow-setup-cn-box{float:left;width:328px;padding:15px 20px;border:1px solid #e1e2e6; background:#f7f8fb;color:#333;}
+.follow-setup-cn-box:hover,.follow-setup-cn-box-r{float:left;width:328px;padding:15px 20px;border:1px solid #ff6200; background:#ffeede;}
+.follow-setup-input{width:60px;height:20px;padding:0 5px;border:1px solid #e1e2e6;border-radius:2px;}
+.follow-setup-input:hover{border: 1px solid #a1a4ad;}
+.follow-setup-xt{float:left;width:760px;height:1px;border-bottom:1px dashed #e1e2e6;}
+.follow-setup-but{float:left;width:120px;height:35px; line-height:35px; text-align:center;color:#fff;border-radius:2px;}
+.follow-setup-but-r{ background:#ff6200;}
+.follow-setup-but-r:hover{ background:#ff7e00;}
+.follow-setup-but-b{ background:#424254;}
+.follow-setup-but-b:hover{ background:#555567;}
+.follow-setup-box .select_account_box{ margin-bottom: 10px; height: 32px; line-height: 32px;}
+.follow-setup-box .choice_account{ display: inline-block; margin-left: 5px; position: relative; width: 198px; height: 30px; border:1px solid #e1e2e6; border-radius: 2px;}
+.follow-setup-box .choice_account .arrow_down_icon{ position: absolute; top: 11px; right: 9px; width: 10px; height: 6px;background:url(../images/newHomes/aoorw_down_icon.png) no-repeat;}
+.follow-setup-box .choice_account .choice_account_value{ padding-left: 10px; height: 30px; line-height: 30px;}
+.follow-setup-box .choice_account .typeimgbox{ display: inline-block;margin-right:5px;}
+.follow-setup-box .choice_account .typeimgbox img{ position: relative; vertical-align: middle; top: -1px;}
+.follow-setup-box .choice_account .choice_account_list_wrap{ position: absolute; left: -1px; width: 100%; z-index: 2; overflow: hidden; background-color: #fff; border-left: 1px solid #e1e2e6; border-top:1px solid #e1e2e6;  border-right: 1px solid #e1e2e6;}
+.follow-setup-box .choice_account .choice_account_list_wrap li{ padding-left: 10px; height: 30px; font-size: 14px; color: #333; line-height: 30px; border-bottom: 1px solid #e1e2e6; cursor: pointer;}
+.follow-setup-box .choice_account .choice_account_list_wrap li:hover{ background-color: #f9f9f9;}

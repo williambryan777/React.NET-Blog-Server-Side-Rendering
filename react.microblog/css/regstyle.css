@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-family: "Microsoft Yahei"; background-image: url(../images/reg/reg_bg.jpg);background-repeat: no-repeat;background-attachment: fixed;background-position: center top;background-size: cover;}
+.wrapper{min-width:1200px; position:relative; zoom:1;}
+.main{margin:0 auto;width: 1200px;}
+.regmainbox a{ color: #ff6200; text-decoration: none;}
+.regmainbox a:hover{ text-decoration: underline;}
+.regmainbox{ padding-top: 65px;}
+.regmainbox>.titlebox{ height: 20px; line-height: 20px; font-size: 20px; color: #333; font-weight: bold; text-align: center;}
+.regmainbox>.titlebox .left_line,
+.regmainbox>.titlebox .right_line{ display: inline-block; margin: 0 17px; vertical-align: middle; height: 1px; font-size: 0; width: 110px; background-color: #d3d3dc;}
+.regmainbox>.login_box{ margin-top: 25px; text-align: center; line-height: 1; font-size: 14px; color: #555;}
+.regmainbox .regmainwrap{ margin-top: 40px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1); border-radius: 3px;}
+.regmainbox .regformpage{}
+.regmainbox .regformpage .left_box{ float: left; width: 880px;}
+.regmainbox .regformpage .right_box{ float: right; width: 319px; border-left: 1px solid #edeef2; background-color: #fafbfd;}
+.regmainbox .regformpage .txtinfobox{ padding: 40px 30px;}
+.regmainbox .txtinfobox h3.titletxt{ line-height: 1; color: #555; font-size: 16px; font-weight:normal;}
+.regmainbox .txtinfobox .qdloginbtn_box{ margin-top: 20px; padding-bottom: 70px;}
+.regmainbox .qdloginbtn_box .loginbtn{ display: block; margin-bottom: 20px; width: 160px; height: 40px; line-height: 40px; font-size: 14px; color: #fff; text-decoration: none; border-radius: 2px;}
+.regmainbox .qdloginbtn_box .wxlogin{ background-color: #42ba3a;}
+.regmainbox .qdloginbtn_box .qqlogin{ background-color: #25a2f5;}
+.regmainbox .qdloginbtn_box .wblogin{ background-color: #f84242;}
+.regmainbox .qdloginbtn_box .login_icon{ display: inline-block; position: relative; margin-left: 20px; margin-right: 8px; width: 26px; vertical-align: middle; background: url(../images/reg/qd_icon.png) no-repeat;}
+.regmainbox .qdloginbtn_box .wxlogin .login_icon{ top: -1px; height: 20px;}
+.regmainbox .qdloginbtn_box .qqlogin .login_icon{ top: -1px; height: 20px; background-position: 0 -34px;}
+.regmainbox .qdloginbtn_box .wblogin .login_icon{ height: 20px; background-position: 0 -68px}
+.regmainbox .qdloginbtn_box .loginbtn:hover{ opacity: .85;}
+.regmainbox .intro_list_box .introtitle{ color: #555; line-height: 1; font-size: 12px;}
+.regmainbox .intro_list_box ul{ margin-top: 15px; margin-left: 15px; font-size: 12px; line-height: 21px; color: #999; list-style:disc;}
+.regmainbox .intro_list_box ul li{ margin-bottom: 5px;}
+.regmainbox  .txtinfobox .introtxt{ padding-top: 15px; line-height: 1; color: #555; font-size: 12px;}
+.regmainbox .regformpage .formwrap{ width: 400px;}
+.regmainbox .regformpage .left_box .formwrap{ margin-left: 228px; padding-top: 40px;}
+.regmainbox .typeicon{ display: inline-block; margin-right: 5px; vertical-align: middle; background: url(../images/reg/type_icon.png) no-repeat;}
+.regmainbox .phoneicon{ position: relative; top: -1px; width: 17px; height: 21px; background-position: 0 0;}
+.regmainbox .on .phoneicon{background-position: -21px 0;}
+.regmainbox .emailicon{ width: 24px; height: 21px; background-position: -42px 0;}
+.regmainbox .on .emailicon{ background-position: -71px 0;}
+.regmainbox .atypeform{ padding-top: 25px;}
+.regmainbox .elewrap{ position: relative; margin-bottom: 20px;}
+.regmainbox .xieyi_box{ position: relative; line-height: 1; font-size: 14px; color: #555;}
+.regmainbox .xieyi_box .checked_icon{display: inline-block;position: relative;top: -1px;margin-right: 5px;width: 14px;height: 14px;vertical-align: middle;background-image: url(../images/reg/uistyles_z.png);background-repeat: no-repeat;background-position: -10px -90px;}
+.regmainbox .xieyi_box .checked .checked_icon{background-position: -10px -107px;}
+.xieyi_box .xieyi_float_box{ display: none; position:absolute; bottom: 25px; width: 720px; height: 420px; background: #fff; box-shadow: 0 4px 20px 1px rgba(0,0,0,0.2);z-index: 5;}
+.xieyi_box .xieyi_float_box p{ padding: 8px 0; text-align: justify;word-wrap: break-word; word-break: break-all; font-size: 12px; line-height: 25px; color: #333;}
+.xieyi_box .xieyi_content{ position:relative; margin-left: 10px; padding: 10px; height: 340px;}
+.xieyi_box .titletxt{color: #333;text-align: center;font-size: 16px;line-height: 50px;}
+.xieyi_box p.title{font-size: 13px;font-weight: bold;}
+.xieyi_box .xieyi_float_box:after{ content: ""; position: absolute; bottom: -16px; left: 165px; width: 0; height: 0; border-width: 8px; border-style: solid; border-color: #fff transparent transparent transparent; z-index: 5;}
+.xieyi_box.hover .xieyi_float_box{ display: block;}
+
+.regmainbox .buttonbox{ margin-top: 30px;}
+.regmainbox .buttonbox .btn{ display: block; width: 100%; height: 40px; line-height: 40px; font-size: 18px; color: #fff; text-align: center; background-color: #ff6200; border:none; cursor: pointer; border-radius: 2px;}
+.regmainbox .buttonbox .btn:hover{ opacity: .85; text-decoration: none;}
+.elewrap .v_rs_box{ position: absolute; left: 415px; top: 0;}
+.elewrap .v_error_box{ padding: 10px; width: 128px; min-height: 18px; border:1px solid #ff6200; font-size: 14px; border-radius: 2px; color: #ff6200;}
+.elewrap .v_error_box:before{ content: ""; position: absolute; left: -12px; top: 20px; margin-top: -6px; width: 0; height: 0; border-width: 6px; border-style: solid; border-color: transparent #ff6200 transparent transparent; z-index: 1;}
+.elewrap .v_error_box:after{ content: ""; position: absolute; left: -11px; top: 20px; margin-top: -6px; width: 0; height: 0; border-width: 6px; border-style: solid; border-color: transparent #fff transparent transparent; z-index: 2;}
+.elewrap .v_sc_box{ height: 40px;}
+.elewrap .v_sc_box .checked_sc_icon{ float:left; margin-top: 10px; width: 20px; height: 20px; vertical-align: middle; background: url(../images/reg/checked_sc_icon.png) no-repeat;}
+
+
+/** 邮箱激活 **/
+.activation_email_box{ padding-top: 175px; padding-bottom: 170px;}
+.activation_txtintro{ line-height: 1; font-size: 14px; color: #333; text-align: center;}
+.activation_txtintro strong{ font-weight: bold;}
+.activation_email_box .btnlink{ display: block; margin: 60px auto 0; width: 158px; height: 38px; color: #ff6200; font-size: 16px; text-align: center; line-height: 38px; border-radius: 2px; border:1px solid #ff6200;}
+.activation_email_box .btnlink:hover{ text-decoration: none; background-color: #ff6200; color: #fff;}
+.activation_email_box .othertxt{ margin-top: 20px; text-align: center; line-height: 1; font-size: 14px; color: #555;}
+
+/** 设置昵称 **/
+.setnickbox{ margin: 0 auto; padding-top: 170px; padding-bottom: 180px; width: 400px;}
+.setnickbox h1.title{ line-height: 1; font-size: 16px; color: #555; text-align: center; font-weight: normal;}
+.setnickbox .sc_txt{ height: 30px; line-height: 30px; font-size: 18px; color: #ff6200;}
+.setnickbox .sc_txt .sc_icon{ float: left; margin-right: 6px; width: 30px; height: 30px; background: url(../images/reg/tips_sc_icon.png) no-repeat;}
+.setnickbox .elewrap{ margin-top: 50px; width: 400px;}
+.setnickbox .elewrap .setinput_txt{ margin-bottom: 13px; line-height: 1; font-size: 14px; color: #555;}
+.setnickbox .btn{display: block; margin: 77px auto 0 ; width: 158px; height: 38px; color: #ff6200; font-size: 16px; text-align: center; line-height: 38px; border-radius: 2px; border:1px solid #ff6200;}
+.setnickbox .btn:hover{ text-decoration: none; background-color: #ff6200; color: #fff;}
+
+/** 社交账号登陆 **/
+.perfect_msg_box{ padding: 40px 0 50px 310px;}
+.perfect_msg_box .left_box{ float: left; width: 80px;}
+.perfect_msg_box .left_box img{ display: block; width: 80px; height: 80px; border-radius: 50%;}
+.perfect_msg_box .right_box{ margin-left: 95px;}
+.perfect_msg_box .txt1{ margin-top: 15px; line-height: 1; color: #333; font-size: 14px;}
+.perfect_msg_box .txt1 strong{ font-weight: bold;}
+.perfect_msg_box .txt2{ margin-top: 15px; font-size: 13px; color: #999; line-height: 1;}
+.perfect_msg_box .perfect_form_wrap{ margin-top: 25px; width: 400px;}
+.perfect_msg_box .bindtab .tabBtn_cont{ height: 38px; line-height: 38px;}
+.perfect_form{ padding-top: 20px;}
+.selecttypebox{ position: relative; height: 38px; border:1px solid #e1e2e6; border-radius: 2px;}
+.leftsebox{ position: absolute; width: 78px; height: 38px; border-right: 1px solid #e1e2e6;}
+.leftsebox:after{ content: ""; position: absolute; top: 16px; right: 11px; width: 10px; height: 6px; background: url(../images/reg/aoorw_down_icon.png) no-repeat; z-index: 3;}
+.leftsebox .value_box{ padding-left: 9px; height: 38px; line-height: 38px; font-size: 14px; color: #333;}
+.leftsebox .select_wrap{ position: absolute; top: -1px; left: -1px; width: 78px; border:1px solid #9ca0a7; z-index: 2; border-radius: 2px; background-color: #fff;}
+.leftsebox .select_wrap .select_op{ padding-left: 9px; height: 38px; line-height: 38px; color: #333; cursor: pointer;}
+.leftsebox .select_wrap .select_op:hover{ color: #ff6200;}
+
+.selecttypebox input{ float: left; margin-left: 80px; padding: 10px; width: 298px; height: 18px; font-size: 14px; color: #333; border-radius: 2px; border:none;}
+
+/** 推荐交易员 **/
+.recommend_box{ padding-top: 90px; padding-bottom: 100px;}
+.recommend_box .title{ line-height: 1; font-size: 16px; color: #555; font-weight: normal; text-align: center;}
+.recommend_list_box{ margin: 50px auto 85px; width: 910px;}
+.recommend_box .recommend_list{ margin-left: -20px;}
+.recommend_box .recommend_list li{ float: left; margin-left: 20px; width: 290px;}
+.recommend_box .recommend_list .ablock{ border:1px solid #e1e2e6;}
+.recommend_box .recommend_list .titlebox{ position: relative; padding-left: 10px; height: 43px; line-height: 43px; border-bottom: 1px solid #f0f0f0;}
+.recommend_box .recommend_list .userpic_box{ display: inline-block; width: 36px; height: 36px;vertical-align: middle; }
+.recommend_box .recommend_list .userpic_box img{ display: block; width: 36px; height: 36px;border-radius: 50%;}
+.recommend_box .recommend_list .nickname{ display: inline-block; margin-left: 10px; vertical-align: middle; font-size: 14px; color: #333;}
+.recommend_box .recommend_list .nickname:hover{ text-decoration: none; color: #ff6200;}
+.recommend_box .recommend_list .titlebox .msgimg{ margin-left: 10px; vertical-align: middle;}
+.recommend_box .numbox{ padding: 20px 10px 0; height: 75px;}
+.recommend_box .numbox .anumbox{ float: left; width: 50%; text-align: center;}
+.recommend_box .numbox .txt1{ font-size: 20px; line-height: 1; color: #333;}
+.recommend_box .numbox .txt2{ margin-top: 15px; font-size: 12px; line-height: 1; color: #999;}
+.recommend_box .bottom_box{ height: 38px; line-height: 38px; text-align: center; background-color: #f7f8fa; border-top: 1px solid #e1e2e6;}
+.recommend_box .bottom_box label{ cursor: pointer;}
+.recommend_box .bottom_box .checked_icon{display: inline-block;position: relative;top: -1px;margin-right: 5px;width: 14px;height: 14px;vertical-align: middle;background-image: url(../images/reg/uistyles_z.png);background-repeat: no-repeat;background-position: -10px -90px;}
+.recommend_box .bottom_box .checked{ color: #ff6200;}
+.recommend_box .bottom_box .checked .checked_icon{background-position: -10px -107px;}
+.recommend_box .btnbox{ text-align: center;}
+.recommend_box .btnbox .btn{ display: inline-block; margin: 0 10px; width: 158px; height: 38px; text-align: center; line-height: 38px; border-radius: 2px; font-size: 16px;}
+.recommend_box .btnbox .btngrey{ color: #555; border:1px solid #a1a4ad;}
+.recommend_box .btnbox .btngrey:hover{ text-decoration: none; background-color: #a1a4ad; color: #fff;}
+.recommend_box .btnbox .btnorange{ border:1px solid #ff6200; color: #ff6200;}
+.recommend_box .btnbox .btnorange:hover{ text-decoration: none; color: #fff; background-color: #ff6200;}
+
+/** 喜好选择 **/
+.habit_box{ padding-top: 45px; padding-bottom: 55px;}
+.habit_box .habitmsg_box{ position: relative; margin-left: 210px;  background: url(../images/reg/bdl_line.png) repeat-y;}
+.habit_box .titletxt{ position: relative; z-index: 2; margin-left: -10px; height: 20px; line-height: 20px; font-size: 16px; color: #333; background-color: #fff;}
+.habit_box .titletxt .num{ float: left; margin-right: 10px; width: 17px; height: 17px; text-align: center; line-height: 17px; border:1px solid #a1a4ad; border-radius: 50%; font-size: 12px; color: #a1a4ad;}
+.habit_box .habit_checkedbox{ position: relative; overflow: hidden; margin-bottom: 40px; padding-left: 20px;}
+.habit_box .habit_checkedbox .checkedbox{ position: relative; float: left; margin-right: 15px; margin-top: 15px; height: 33px; line-height: 33px; border:1px solid #e1e2e6; border-radius: 2px; cursor: pointer; text-align: center; font-size: 12px; color: #555;}
+.habit_box .habit1_box .checkedbox{ width: 178px;}
+.habit_box .habit2_box .checkedbox{ width: 118px;}
+.habit_box .habit3_box .checkedbox{ width: 178px;}
+.habit_box .habit2_box{ width: 680px;}
+
+.habit_box .checkedbox.checked i{ position: absolute; right: 0; bottom: 0; width: 14px; height: 14px; background: url(../images/reg/checked_tick.png) no-repeat;}
+.habit_box .habit_checkedbox .checkedbox.checked{ border-color: #ff6200; color: #ff6200;}
+
+.habit_box .btnbox{ margin-top: 60px; text-align: center;}
+.habit_box .btnbox .btn{ display: inline-block; margin: 0 10px; width: 158px; height: 38px; text-align: center; line-height: 38px; border-radius: 2px; font-size: 16px;}
+.habit_box .btnbox .btngrey{ color: #555; border:1px solid #a1a4ad;}
+.habit_box .btnbox .btngrey:hover{ text-decoration: none; background-color: #a1a4ad; color: #fff;}
+.habit_box .btnbox .btnorange{ border:1px solid #ff6200; color: #ff6200;}
+.habit_box .btnbox .btnorange:hover{ text-decoration: none; color: #fff; background-color: #ff6200;}
+
+
+
+.elewrap .inputbox input{ padding: 10px; width: 378px; height: 18px; font-size: 14px; color: #333; border-radius: 2px; border: 1px solid #e1e2e6;}
+.elewrap .inputbox input:focus{ border-color: #a1a4ad;}
+.elewrap .inputbox input.w248{ width: 248px;}
+.elewrap .eletxtintro{ margin-top: 8px; line-height: 1; font-size: 12px; color: #aaa;}
+.elewrap .yzm_box{ float: right; width: 118px; height: 38px;border:1px solid #e1e2e6; border-radius: 2px;}
+.elewrap .sendmsgbtn{float: right; width: 118px; height: 38px; text-align: center; line-height: 38px; color: #656571; border:1px solid #656571; border-radius: 2px;}
+.elewrap .sendmsgbtn:hover{ background-color: #656571; color: #fff; text-decoration: none;}
+.elewrap .sendmsgbtn.sent,.elewrap .sendmsgbtn.sent:hover{ border-color: #B7B9C5; background-color: #B7B9C5;text-decoration: none; color: #fff;}
+
+.regtypetab .tabBtn_cont{ height: 48px; line-height: 48px;}
+.regmainbox .tabBtn{ float: left; margin-left: -1px; width: 50%; cursor: pointer;}
+.regmainbox .tabBtn .tabBtn_cont{ position: relative; text-align: center; font-size: 16px; border:1px solid #a1a4ad;}
+.regmainbox .lefttabbtn .tabBtn_cont{ border-top-left-radius: 2px; border-bottom-letf-radius: 2px;}
+.regmainbox .righttabbtn .tabBtn_cont{ border-top-right-radius: 2px; border-bottom-right-radius: 2px;}
+.regmainbox .tabBtn.on .tabBtn_cont{ border-color: #ff6200; color: #ff6200; z-index: 2;}
+.regmainbox .tabBtn.on .tabBtn_cont:before{ content: ""; position: absolute;left: 50%; margin-left: -8px; bottom: -16px; width: 0; height: 0; overflow: hidden; border-width: 8px; border-style: solid; border-color:#fff transparent transparent transparent; z-index: 3}
+.regmainbox .tabBtn.on .tabBtn_cont:after{ content: ""; position: absolute; left: 50%; margin-left: -8px; bottom: -17px; width: 0; height: 0; overflow: hidden; border-width: 8px; border-style: solid; border-color:#ff6200 transparent transparent transparent; z-index: 2;}
+.tabCont{ display: none;}
+.tabCont.on{ display: block;}
+.cff6200{ color: #ff6200;}
+.c00aa6d{ color: #00aa6d;}

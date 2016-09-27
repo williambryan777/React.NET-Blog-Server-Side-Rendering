@@ -1,0 +1,59 @@
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+    height:80px;
+    width:80px;
+    background:url('../images/user/add-pic.jpg') no-repeat;
+}
+.webuploader-pick-hover {
+	background:url('../images/user/add-pic-red.jpg') no-repeat;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+.float-left{
+    float:left;
+}
+.i-pic-close,.i-pic-close-send{
+    background:url('../images/user/icon.png') no-repeat;
+    padding: 10px;
+    position: absolute;
+    left: 61px;
+    background-position: -366px 0;
+    cursor:pointer;
+    z-index:1;
+}
+.i-pic-close:hover,.i-pic-close-send:hover{
+    background-position: -386px 0;
+}
+.i-pic-success{
+  background: url('../images/user/icon.png') no-repeat;
+  padding: 10px;
+  position: absolute;
+  left: 30px;
+  top: 34px;
+  background-position: -434px -1px;
+  cursor: pointer;
+}
+.i-pic-fail{
+  background: url('../images/user/icon.png') no-repeat;
+  padding: 10px;
+  position: absolute;
+  left: 30px;
+  top: 34px;
+  background-position: -410px -1px;
+  cursor: pointer;
+}
