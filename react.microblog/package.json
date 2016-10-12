@@ -1,8 +1,8 @@
 {
-  "name": "React.Sample.Webpack",
+  "name": "React.NET-Blog-Server-Side-Rendering",
   "version": "0.0.1",
-  "description": "Webpack + ASP.NET MVC 4 sample for ReactJS.NET",
-  "main": "gulpfile.js",
+  "description": "React.NET-Blog-Server-Side-Rendering",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

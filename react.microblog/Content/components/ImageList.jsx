@@ -1,5 +1,5 @@
 /**
- * 微博相片列表
+ * 微博图片列表
  */
 var React = require('react');
 var ImageList = React.createClass({

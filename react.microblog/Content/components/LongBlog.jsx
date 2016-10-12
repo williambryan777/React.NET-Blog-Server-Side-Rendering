@@ -63,7 +63,7 @@ var LongBlog = React.createClass({
                         </div>
                     <a href="javascript:void(0)" onClick={this.unfoldBlog} className="readallbtn" id={'js_readallbtn' + this.state.id}>阅读</a>
                  </div>
-                 <div class="cwb_detailbox_wrap" >
+                 <div class="cwb_detailbox_wrap" style={{display:'none'}} >
                     <div className="cwb_detailbox">
                         <div className="tabtitle">
                             <a href="javascript:void(0)" onClick={this.collapseBlog}  ><i className="shouqi_icon"></i>收起</a>
