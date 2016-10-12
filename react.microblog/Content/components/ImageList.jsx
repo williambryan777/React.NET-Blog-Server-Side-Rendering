@@ -4,45 +4,35 @@
 var React = require('react');
 var ImageList = React.createClass({
     propTypes: {
-        initialImgUrlList: React.PropTypes.array.isRequired,
-        initiallongBlogId: React.PropTypes.number.isRequired,
+        imgUrlList: React.PropTypes.array,
+        longBlogId: React.PropTypes.number.isRequired,
     },
-    getInitialState() {
-        return {
-            imgUrlList: this.props.initialImgUrlList,
-            longBlogId: this.props.initiallongBlogId
-        }
-    },
-
     render() {
+
+
         let imgList = this.props.imgUrlList;
+        let longBlogId=this.props.longBlogId;
+        if(!imgList){
+            return null;
+        }
         let liNodes = imgList.map(imgUrl => {
-            <li className='f1 mr5'>
-                <img src={imgUrl} width="80" height="80"/>
-            </li>
+           return(
+               <li className='f1 mr5'>
+                   <img src={imgUrl} width="80" height="80" />
+               </li>
+           )
         });
-        // let htmlImg = '';
-        // if (this.state.imgUrlList > 0 && this.state.longBlogId > 0) {
-        //     htmlImg = <div className="clearfix" >
-        //         <ul className="line-content-pic mt10 imgList">
-        //             {liNodes}
-        //         </ul>
-        //     </div>;
-        // }
-        const isShow = this.state.imgUrlList > 0 && this.state.longBlogId > 0
-        return (
-            {
-                if(isShow) {
-                    <div className="clearfix" >
-                        <ul className="line-content-pic mt10 imgList">
-                            {liNodes}
-                        </ul>
-                    </div>
-                }
-            }
-
-        );
-
+        const isShow = imgList && imgList.length > 0 && longBlogId <= 0;
+        if(isShow){
+            return (
+                <div className="clearfix">
+                    <ul className="line-content-pic mt10 imgList">{liNodes}
+                    </ul>
+                </div>
+            )
+        }else{
+            return null;
+        }
     }
 })
 

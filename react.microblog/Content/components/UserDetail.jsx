@@ -9,26 +9,32 @@ var UserDetail = React.createClass({
         userDisplayName:React.PropTypes.string.isRequired
     },
     getUserPageUrl(userId) {//个人用户主页
-        return '/UserPage/' + userId;
+        return '/UserPage/' + this.props.userId;
     },
     render() {
-        let htmlVertical='';
         if (this.props.accountRole == 1) {
-            htmlVertical=` <span style="vertical-align: middle;margin-left:1px;">
-                <img src="/Themes/DefaultClean/images/certification.png" width="48" height="20" />
-            </span>`
+            return (
+                <div className="user_msg_txt">
+                    <a href={this.getUserPageUrl()} target="_blank" className="username">{this.props.userDisplayName}</a>
+                    <span style={{verticalAlign: 'middle', marginLeft: '1px'}}>
+                        <img src="/Themes/DefaultClean/images/certification.png" width="48" height="20" />
+                    </span>
+                </div>
+            )
         }
         else if (this.props.accountRole == 2) {
-            htmlVertical= `<span  style="vertical-align:middle">
-                <i className="icon v-official"></i>
-            </span>`
+            return (
+                <div className="user_msg_txt">
+                    <a href={this.getUserPageUrl() } target="_blank" className="username">{this.props.userDisplayName}</a>
+                    <span style={{ verticalAlign: 'middle' }}>
+                        <i className="icon v-official"></i>
+                    </span>
+                </div>
+            )
         }
-        return (
-            <div className="user_msg_txt">
-                <a href={this.getUserPageUrl(this.props.userId) }  target="_blank" className="username" dangerouslySetInnerHTML={{ __html: this.props.UserDisplayName }} ></a>
-                {htmlVertical}
-            </div>
-        );
+        else{
+           return null;
+        }
     }
 })
 

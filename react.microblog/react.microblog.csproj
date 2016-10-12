@@ -24,6 +24,7 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>df72495c</NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -192,6 +193,21 @@
     <Content Include="Content\components\index.js" />
     <Content Include="Content\Sample.css" />
     <Content Include="Content\server.js" />
+    <Content Include="css\community.css" />
+    <Content Include="css\customer.css" />
+    <Content Include="css\global-2015.css" />
+    <Content Include="css\homestyle.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\integration.css" />
+    <Content Include="css\microblog.css" />
+    <Content Include="css\ng.css" />
+    <Content Include="css\profile.css" />
+    <Content Include="css\public.css" />
+    <Content Include="css\ranking.css" />
+    <Content Include="css\regstyle.css" />
+    <Content Include="css\search_result.css" />
+    <Content Include="css\traders.css" />
+    <Content Include="css\webuploader.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\components\Avatar.jsx" />
     <Content Include=".babelrc" />
@@ -206,6 +222,8 @@
     <Content Include="Content\components\ShortBlog.jsx" />
     <Content Include="Content\components\UserDetail.jsx" />
     <Content Include="jsconfig.json" />
+    <Content Include="Content\components\LongBlog.jsx" />
+    <Content Include="Content\components\Blog.jsx" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

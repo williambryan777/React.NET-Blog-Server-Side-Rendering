@@ -1,9 +1,11 @@
-const ShortBlog = require("./ShortBlog");
-const UserDetail = require("./UserDetail");
-const ImageList = require("./ImageList");
-const React = require('react');
-const Avatar = require('./Avatar');
-const Attention = require('./Attention')
+
+var React = require('react')
+var Avatar = require('./Avatar');
+var ShortBlog = require('./ShortBlog');
+var UserDetail = require('./UserDetail');
+var ImageList = require('./ImageList');
+var Attention = require('./Attention');
+var Blog = require('./Blog');
 
 var BlogBox = React.createClass({
     propTypes: {
@@ -18,27 +20,28 @@ var BlogBox = React.createClass({
         }
     },
     render() {
-        var originalBlogs = this.state.blogList.map(blog => {
-            <li className='weibo_block clearfix'>
-                <div className='left_box'>
-                    // 头像
-                    <Avatar userId={blog.MicroBlog.UserId} />
-                    //状态
-                    <Attention userId={blog.MicroBlog.UserId} isAttention={blog.IsAttention} isOwnerBlog={blog.IsOwnerBlog}/>
-                </div>
-                <div className='right_box'>
-                    <UserDetail userId={blog.MicroBlog.UserId} accountRole={blog.AccountRole} userDisplayName={blog.MicroBlog.UserDisplayName}/>
-                </div>
-                
-            </li>
+         var microBlogs = this.state.blogList.map(item => {
+           return(
+               <li className='weibo_block clearfix'>
+                   <div className='left_box'>
+                       <Avatar userId={item.MicroBlog.UserId} />
+                       <Attention userId={item.MicroBlog.UserId} isAttention={item.IsAttention} isOwnerBlog={item.IsOwnerBlog} />
+                   </div>
+                   <div className='right_box'>
+                       <UserDetail userId={item.MicroBlog.UserId} accountRole={item.AccountRole} userDisplayName={item.MicroBlog.UserDisplayName} />
+                       <Blog blog={item} />
+                   </div>
+               </li>
+           );
         })
         return (
             <div className="weibo_wrap weibo_detail_wrap">
-                <ul className='weibo_detail_list'>
-                    {originalBlogs}
+                <ul className='weibo_detail_list'>{microBlogs}
                 </ul>
             </div>
         )
     }
 })
+
+module.exports = BlogBox;
 

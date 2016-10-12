@@ -3,14 +3,10 @@
 <html>
 <head>
     <title>ReactJS.NET Microblog Server side rendering</title>
-    <link rel="stylesheet" href="~/Content/Sample.css" />
+    <link rel="stylesheet" href="~/css/public.css" />
+    <link rel="stylesheet" href="~/css/community.css" />
 </head>
 <body>
-    <p>
-        This is an example of ReactJS.NET's server-side rendering. The initial state of this
-        comments box is rendered server-side, and additional data is loaded via AJAX and rendered
-        client-side.
-    </p>
 
     <!-- Render the component server-side, passing initial props -->
     @Html.React("Components.BlogBox", new { initBlogs = Model.Items })

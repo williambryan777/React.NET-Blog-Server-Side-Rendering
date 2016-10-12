@@ -4,15 +4,20 @@
 var React = require('react');
 var ShortBlog = React.createClass({
     propTypes: {
-        isTop: React.PropTypes.bool.isRequired,
-        longBlogId: React.PropTypes.number.isRequired,
+        isTop: React.PropTypes.bool,
         blogBody: React.PropTypes.string.isRequired
     },
+    getInitialState(){
+        return {
+            isTop:this.props.isTop
+        }
+    },
     render() {
-        let classZD = this.props.isTop ? 'webo_zd819' : '';
+        let classZD = this.state.isTop ? 'webo_zd819' : '';
         let cssClass = `weibo_content ${classZD}`;
+        let blogBody=this.props.blogBody;
         return (
-            <div className={cssClass}   dangerouslySetInnerHTML={{ __html: this.props.blogBody }} >
+            <div className={cssClass} dangerouslySetInnerHTML={{ __html: blogBody }}>
             </div>
         );
     },
