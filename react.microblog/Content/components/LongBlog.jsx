@@ -32,63 +32,40 @@ var LongBlog = React.createClass({
         console.log(id)
        
     },
-    render () {
+     render () {
         let classZD = this.state.isTop ? 'webo_zd819' : '';
         let cssClass = `weibo_content ${classZD}`;
-        let smallImg='';
-        if (this.state.longBlogImg != null){
-            smallImg=(
-                <img  src={this.state.longBlogImg} className="left_msgimg" width="80" height="80" alt="followme" />
-            )
-                }else{
-            smallImg=(
-                <img  src="/Themes/DefaultClean/images/cwb_default_img.jpg" className="left_msgimg" width="80" height="80" alt="" />
-            )
-}
+        
         return (
             <div>
                 <div  className={cssClass} >
                     <span style={{ color: '#ff6200' }}>[长微博]</span>{this.state.longBlogTitle}
                 </div>
                 <div className="cwb_mediasmallBox" style={{
-                        display: 'block'}}>
-                        <a  href={this.getBlogDetail()} target="_blank">
-                            {smallImg}
-                         </a>
-                        <div className="right_txtintrobox">
-                            <h3 className="title">
-                                <a href={this.getBlogDetail() } target="_blank">{this.state.longBlogTitle}</a>
-                            </h3>
-                            <p className="jstxt" dangerouslySetInnerHTML={{ __html: this.state.longBlogIntro }}></p>
-                        </div>
-                        <a href={'/Social/BlogDetail/LongBlogDetail/' + this.state.id} target="_blank" onClick={this.unfoldBlog} className="readallbtn" id={'js_readallbtn' + this.state.id} >阅读</a>
-                 </div>
-                 <div class="cwb_detailbox_wrap" style={{display:'none'}} >
-                    <div className="cwb_detailbox">
-                        <div className="tabtitle">
-                            <a href="javascript:void(0)" onClick={this.collapseBlog}  ><i className="shouqi_icon"></i>收起</a>
-                        </div>
-                        <div className="content">
-                            <h3 className="cwb_title">{this.state.longBlogTitle}</h3>
-                            <div className="cwb_dy_box">
-                                <div className="cwb_dy_box_cont">导语：{this.state.longBlogIntro}</div>
-                            </div>
-                            <div id={'BlogBody_'+this.state.id}>
-                                {this.state.LongBlogBody}
-                            </div>
-                        </div>
-                        <div class="tabtitle">
-                            <a href="javascript:void(0)" onClick={this.collapseBlog} ><i className={'shouqi_icon'+this.state.id}></i>收起</a>
-                        </div>
+                    display: 'block'}}>
+                    <a  href={this.getBlogDetail()} target="_blank">
+                        {(()=>{
+                        if (this.state.longBlogImg != null) {//有图片
+                            return (<img src={this.state.longBlogImg} className="left_msgimg" width="80" height="80" alt="followme" />)
+                        } else {//没有图片的话给一个默认的图片
+                            return (<img src="/Themes/DefaultClean/images/cwb_default_img.jpg" className="left_msgimg" width="80" height="80" alt="" />)
+                        }
+                        })()}
+                     </a>
+                    <div className="right_txtintrobox">
+                        <h3 className="title">
+                            <a href={this.getBlogDetail() } target="_blank">{this.state.longBlogTitle}</a>
+                        </h3>
+                        <p className="jstxt" dangerouslySetInnerHTML={{ __html: this.state.longBlogIntro }}></p>
                     </div>
-                 </div>
-
+                    <a href={'/Social/BlogDetail/LongBlogDetail/' + this.state.id} target="_blank"  className="readallbtn" id={'js_readallbtn' + this.state.id}>阅读</a>
+                </div>
             </div>
-    )
-}
+        )
+    }
 
 
 });
-    
 
-module.exports=LongBlog
+
+module.exports = LongBlog

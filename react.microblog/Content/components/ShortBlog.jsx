@@ -13,11 +13,11 @@ var ShortBlog = React.createClass({
         }
     },
     render() {
-        let classZD = this.state.isTop ? 'webo_zd819' : '';
+        const {isTop, blogBody} = this.props;
+        let classZD = isTop ? 'webo_zd819' : '';
         let cssClass = `weibo_content ${classZD}`;
-        let blogBody=this.props.blogBody;
         return (
-            <div className={cssClass} dangerouslySetInnerHTML={{ __html: blogBody }}>
+            <div className={cssClass} dangerouslySetInnerHTML={{ __html: blogBody }} >
             </div>
         );
     },

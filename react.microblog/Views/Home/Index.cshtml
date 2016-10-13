@@ -5,6 +5,15 @@
     <title>热门微博</title>
     <link rel="stylesheet" href="~/css/public.css" />
     <link rel="stylesheet" href="~/css/community.css" />
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/slideImg.js"></script>
+    <script>
+
+        $(document).on('click', '.imgList', function () {
+            //图片浏览插件
+            $(".imgList").slideImg();
+        })
+    </script>
 </head>
 <body>
 
@@ -20,7 +29,7 @@
 
     <!-- Render the code to initialise the component -->
     @Html.ReactInitJavaScript()
-    <script src="/Scripts/jquery-1.8.2.min.js"></script>
-    <script src="/Scripts/slideImg.js"></script>
+
+
 </body>
 </html>

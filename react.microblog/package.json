@@ -18,6 +18,9 @@
     "webpack": "^1.12.9"
   },
   "dependencies": {
-    "jquery": "^1.11.3"
+    "jquery": "^1.11.3",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-medium-image-zoom": "^0.5.1"
   }
 }

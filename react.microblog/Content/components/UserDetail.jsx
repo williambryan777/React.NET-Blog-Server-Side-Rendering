@@ -12,29 +12,25 @@ var UserDetail = React.createClass({
         return '/UserPage/' + this.props.userId;
     },
     render() {
-        if (this.props.accountRole == 1) {
-            return (
-                <div className="user_msg_txt">
-                    <a href={this.getUserPageUrl()} target="_blank" className="username">{this.props.userDisplayName}</a>
-                    <span style={{ verticalAlign: 'middle', marginLeft: '1px' }}>
-                        <img src="/Themes/DefaultClean/images/certification.png" width="48" height="20" />
-                    </span>
-                </div>
-            )
-        }
-        else if (this.props.accountRole == 2) {
-            return (
-                <div className="user_msg_txt">
-                    <a href={this.getUserPageUrl()} target="_blank" className="username">{this.props.userDisplayName}</a>
-                    <span style={{ verticalAlign: 'middle' }}>
-                        <i className="icon v-official"></i>
-                    </span>
-                </div>
-            )
-        }
-        else {
-            return null;
-        }
+        const {accountRole, userId, userDisplayName} = this.props;
+        return (
+            <div className="user_msg_txt">
+                <a href={this.getUserPageUrl()} target="_blank" className="username"  >{userDisplayName}</a>
+                {(() => {
+                    if (accountRole == 1) {
+                        return (<span style={{ verticalAlign: 'middle', marginLeft: '1px' }}>
+                            <img src="/Themes/DefaultClean/images/certification.png" width="48" height="20" />
+                        </span>)
+                    } else if (accountRole == 2) {
+                        return (
+                            <span style={{ verticalAlign: 'middle' }}>
+                                <i className="icon v-official"></i>
+                            </span>
+                        )
+                    }
+                })()}
+            </div>
+        )
     }
 })
 
