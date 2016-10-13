@@ -211,6 +211,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\components\Avatar.jsx" />
     <Content Include=".babelrc" />
+    <Content Include="Scripts\slideImg.js" />
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
     <Content Include="blogs.json">

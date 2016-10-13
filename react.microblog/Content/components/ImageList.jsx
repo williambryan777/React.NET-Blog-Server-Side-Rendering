@@ -2,14 +2,20 @@
  * 微博图片列表
  */
 var React = require('react');
+var $ = require("jquery");
+
 var ImageList = React.createClass({
     propTypes: {
         imgUrlList: React.PropTypes.array,
         longBlogId: React.PropTypes.number.isRequired,
     },
+    componentDidMount(){
+        $(document).on('click', '.imgList', function () {
+            //图片浏览插件
+            $(".imgList").slideImg();
+        })
+    },
     render() {
-
-
         let imgList = this.props.imgUrlList;
         let longBlogId=this.props.longBlogId;
         if(!imgList){

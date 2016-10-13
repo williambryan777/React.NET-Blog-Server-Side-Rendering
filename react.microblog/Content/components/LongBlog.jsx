@@ -61,7 +61,7 @@ var LongBlog = React.createClass({
                             </h3>
                             <p className="jstxt" dangerouslySetInnerHTML={{ __html: this.state.longBlogIntro }}></p>
                         </div>
-                    <a href="javascript:void(0)" onClick={this.unfoldBlog} className="readallbtn" id={'js_readallbtn' + this.state.id}>阅读</a>
+                        <a href={'/Social/BlogDetail/LongBlogDetail/' + this.state.id} target="_blank" onClick={this.unfoldBlog} className="readallbtn" id={'js_readallbtn' + this.state.id} >阅读</a>
                  </div>
                  <div class="cwb_detailbox_wrap" style={{display:'none'}} >
                     <div className="cwb_detailbox">

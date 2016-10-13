@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ReactJS.NET Microblog Server side rendering</title>
+    <title>热门微博</title>
     <link rel="stylesheet" href="~/css/public.css" />
     <link rel="stylesheet" href="~/css/community.css" />
 </head>
@@ -12,10 +12,15 @@
     @Html.React("Components.BlogBox", new { initBlogs = Model.Items })
 
     <!-- Load all required scripts (React + the site's scripts) -->
+
     <script src="https://fb.me/react-15.0.1.js"></script>
     <script src="https://fb.me/react-dom-15.0.1.js"></script>
+   
     <script src="@Url.Content("~/build/client.bundle.js")"></script>
+
     <!-- Render the code to initialise the component -->
     @Html.ReactInitJavaScript()
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/slideImg.js"></script>
 </body>
 </html>

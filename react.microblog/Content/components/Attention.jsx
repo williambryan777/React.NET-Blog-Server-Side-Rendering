@@ -23,7 +23,7 @@ var Attention = React.createClass({
             let cssClass = `normalFollowBtn btn ${setfollow} attr_${this.props.userId} `;//样式
             return (
                 <div className="btnbox">
-                    <a href="javascript:void(0);" className={cssClass} onClick={this.AttentionUser} title={this.state.isAttention ? '点击取消关注' : '点击添加关注'}>{this.state.isAttention ? '已关注' : '关注'}</a>
+                    <a href="/Account/Register/Mobile" className={cssClass} >关注</a>
                 </div>
             )
         }else{
